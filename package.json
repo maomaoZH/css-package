@@ -1,4 +1,11 @@
 {
+  "name": "css-package",
+  "version": "1.0.0",
+  "description": "a CSS package prototype",
+  "main": "index.css",
+  "repository": "https://github.com/maomaoZH/css-package.git",
+  "author": "Maomao Zhang",
+  "license": "MIT",
   "dependencies": {
     "@telekom/design-tokens": "^1.0.0-beta.8"
   }
