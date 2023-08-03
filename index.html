@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>css prototype index file</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body style="font-family: TeleNeoWeb, sans-serif;">
+    <h2>button</h1>
+    <button class="dt-btn dt-btn--primary">primary</button>
+    <button class="dt-btn dt-btn--secondary">secondary</button>
+    <button class="dt-btn dt-btn--primary dt-btn--small">primary small</button>
+    <button class="dt-btn dt-btn--primary dt-btn--disabled">
+      primary disabled
+    </button>
+    <button class="dt-btn dt-btn--secondary dt-btn--disabled">
+      secondary disabled
+    </button>
+    <button class="dt-btn dt-btn--small dt-btn--secondary dt-btn--disabled">
+      secondary disabled
+    </button>
+    <button class="dt-btn dt-btn--small dt-btn--primary dt-btn--icon-before">
+      <svg
+        class="scale-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+      >
+        <g fill="currentColor">
+          <g>
+            <path
+              d="M21.315 6.07a5.857 5.857 0 00-4.85-2.57 5.85 5.85 0 00-2.265.45c-1 .415-1.69.985-2.2 1.605-.55-.67-1.305-1.28-2.425-1.69a5.864 5.864 0 00-6.89 2.205 5.89 5.89 0 00.39 7.12l6.63 7.755a3.017 3.017 0 004.585 0l6.63-7.755a5.883 5.883 0 00.395-7.12zm-1.53 6.145L13.15 19.97c-.3.355-.725.53-1.15.53-.425 0-.85-.175-1.15-.53l-6.635-7.755a4.372 4.372 0 01-.29-5.3A4.319 4.319 0 017.535 5c.52 0 1.035.09 1.525.27 1.785.655 2.275 1.915 2.94 3.235.635-1.255 1.105-2.48 2.775-3.17A4.486 4.486 0 0116.465 5c1.365 0 2.735.625 3.61 1.915 1.11 1.63.99 3.8-.29 5.3z"
+              fill-rule="evenodd"
+            ></path>
+          </g>
+        </g>
+      </svg>
+      heart
+    </button>
+    <button class="dt-btn dt-btn--small dt-btn--primary dt-btn--icon-after">
+      heart
+
+      <svg
+        class="scale-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+      >
+        <g fill="currentColor">
+          <g>
+            <path
+              d="M21.315 6.07a5.857 5.857 0 00-4.85-2.57 5.85 5.85 0 00-2.265.45c-1 .415-1.69.985-2.2 1.605-.55-.67-1.305-1.28-2.425-1.69a5.864 5.864 0 00-6.89 2.205 5.89 5.89 0 00.39 7.12l6.63 7.755a3.017 3.017 0 004.585 0l6.63-7.755a5.883 5.883 0 00.395-7.12zm-1.53 6.145L13.15 19.97c-.3.355-.725.53-1.15.53-.425 0-.85-.175-1.15-.53l-6.635-7.755a4.372 4.372 0 01-.29-5.3A4.319 4.319 0 017.535 5c.52 0 1.035.09 1.525.27 1.785.655 2.275 1.915 2.94 3.235.635-1.255 1.105-2.48 2.775-3.17A4.486 4.486 0 0116.465 5c1.365 0 2.735.625 3.61 1.915 1.11 1.63.99 3.8-.29 5.3z"
+              fill-rule="evenodd"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <button class="dt-btn dt-btn--small dt-btn--primary dt-btn--icon-only">
+      <svg
+        class="scale-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+      >
+        <g fill="currentColor">
+          <g>
+            <path
+              d="M21.315 6.07a5.857 5.857 0 00-4.85-2.57 5.85 5.85 0 00-2.265.45c-1 .415-1.69.985-2.2 1.605-.55-.67-1.305-1.28-2.425-1.69a5.864 5.864 0 00-6.89 2.205 5.89 5.89 0 00.39 7.12l6.63 7.755a3.017 3.017 0 004.585 0l6.63-7.755a5.883 5.883 0 00.395-7.12zm-1.53 6.145L13.15 19.97c-.3.355-.725.53-1.15.53-.425 0-.85-.175-1.15-.53l-6.635-7.755a4.372 4.372 0 01-.29-5.3A4.319 4.319 0 017.535 5c.52 0 1.035.09 1.525.27 1.785.655 2.275 1.915 2.94 3.235.635-1.255 1.105-2.48 2.775-3.17A4.486 4.486 0 0116.465 5c1.365 0 2.735.625 3.61 1.915 1.11 1.63.99 3.8-.29 5.3z"
+              fill-rule="evenodd"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </button>
+
+    <h2>card</h2>
+    <div class="dt-card dt-card--has-image-horizontal dt-card--interactive" style="width: 600px;height: 200px;margin-bottom: 64px;">
+      <div class="dt-card__image">
+        <img src="https://picsum.photos/200/200" alt="placeholder" />
+      </div>
+      <div class="dt-card__content">
+        <h3 class="dt-card__title">Blogpost Title</h3>
+        <p class="dt-card__body">Lorem ipsur dolor sit amet</p>
+      </div>
+    </div>
+
+    <div class="dt-card dt-card--has-image-vertical dt-card--interactive"  style="width: 300px;height: 400px;">
+      <div class="dt-card__image">
+        <img src="https://picsum.photos/300/200" alt="placeholder" />
+      </div>
+      <div class="dt-card__content">
+        <h3 class="dt-card__title">Blogpost Title</h3>
+        <p class="dt-card__body">Lorem ipsur dolor sit amet</p>
+      </div>
+    </div>
+  </body>
+</html>
