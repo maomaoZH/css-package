@@ -1,11 +1,14 @@
 {
   "name": "css-package-prototype",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a CSS package which contains a set of CSS files",
   "main": "dist/main.min.css",
   "repository": "https://github.com/maomaoZH/css-package.git",
   "author": "Maomao Meyer-Zhang",
   "license": "MIT",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build:css": "cleancss -o dist/main.min.css src/index.css",
     "build": "npm run build:css"
