@@ -1,0 +1,73 @@
+.dt-accordion {
+  position: relative;
+  margin: var(--telekom-spacing-composition-space-06) 0;
+}
+
+.dt-accordion__title {
+  color: currentColor;
+  width: 100%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-top: 0;
+  border-color: transparent;
+  border-style: solid;
+  padding-right: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+  font-size: var(--telekom-typography-font-size-callout);
+  font-weight: var(--telekom-typography-font-weight-extra-bold);
+  line-height: var(--telekom-typography-line-spacing-standard);
+  border-width: var(--telekom-spacing-composition-space-02);
+  border-radius: var(--telekom-radius-small);
+  padding-left: 0;
+  /* a11y: allows some "external" typographic styles to leak in
+   https://www.w3.org/TR/WCAG21/#text-spacing */
+  font-family: inherit;
+  word-spacing: inherit;
+  letter-spacing: inherit;
+}
+
+.dt-accordion__title-text {
+  margin-left: var(--telekom-spacing-composition-space-04);
+}
+
+.dt-accordion__title:hover {
+  cursor: pointer;
+  color: var(--telekom-color-text-and-icon-primary-hovered);
+  background-color: var(none);
+}
+
+.dt-accordion__title:active {
+  color: var(--telekom-color-text-and-icon-primary-pressed);
+  background-color: transparent;
+}
+
+.dt-accordion__title:focus {
+  outline: var(--telekom-color-functional-focus-standard);
+}
+
+.dt-accordion__title[aria-expanded="false"] svg path.dt-accordion__icon--right {
+  display: block;
+}
+
+.dt-accordion__title[aria-expanded="true"] svg path.dt-accordion__icon--right {
+  display: none;
+}
+
+.dt-accordion__title[aria-expanded="false"] svg path.dt-accordion__icon--down {
+  display: none;
+}
+
+.dt-accordion__title[aria-expanded="true"] svg path.dt-accordion__icon--down {
+  display: block;
+}
+
+.dt-accordion__detail {
+  font: var(--telekom-text-style-body);
+  padding-right: var(--telekom-spacing-composition-space-14);
+  padding-left: 34px;
+  /* These should collapse with tags like p, that's what we want */
+  margin-top: var(--telekom-spacing-composition-space-06);
+  margin-bottom: var(--telekom-spacing-composition-space-08);
+}

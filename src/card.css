@@ -1,0 +1,60 @@
+.dt-card {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: var(--telekom-color-background-surface);
+  transition: all var(--telekom-motion-duration-transition)
+    var(--telekom-motion-easing-standard);
+  border-radius: var(--telekom-radius-large);
+  box-shadow: var(--telekom-shadow-raised-standard);
+  display: flex;
+}
+
+.dt-card__content {
+  padding: var(--telekom-spacing-composition-space-08);
+  flex: 1;
+}
+
+.dt-card--interactive {
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  box-shadow: var(--telekom-shadow-raised-standard);
+}
+
+.dt-card--interactive:hover {
+  box-shadow: var(--telekom-shadow-raised-hover);
+}
+
+.dt-card--interactive:focus {
+  box-shadow: var(--telekom-shadow-raised-hover),
+    0 0 0 var(--telekom-line-weight-highlight)
+      var(--telekom-color-functional-focus-standard);
+}
+
+.dt-card--interactive:active {
+  border: none;
+  box-shadow: var(--telekom-shadow-raised-pressed);
+}
+
+.dt-card--has-image-vertical {
+  flex-direction: column;
+}
+
+.dt-card--has-image-horizontal {
+  flex-direction: row;
+}
+
+.dt-card__image img {
+  object-fit: contain;
+}
+
+.dt-card__title {
+  margin: 0px 0px 16px;
+  font: var(--telekom-text-style-heading-4);
+}
+
+.dt-card__body {
+  font: var(--telekom-text-style-body);
+}

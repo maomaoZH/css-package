@@ -1,0 +1,339 @@
+/*
+* SPACING UTILITIES
+*
+* Utilities for setting padding and margin.
+*
+* Rules:
+*  p - padding
+*  m - margin
+*
+* Directions:
+*  t - top
+*  r - right
+*  b - bottom
+*  l - left
+*  v - vertical
+*  h - horizontal
+*  [none] - all (e.g: `.dt-u-p-sm`)
+*
+*/
+
+/* --------------- PADDING --------------- */
+
+.dt-u-p-0 {
+  padding: 0;
+}
+.dt-u-p-auto {
+  padding: auto;
+}
+.dt-u-p-2 {
+  padding: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-p-4 {
+  padding: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-p-8 {
+  padding: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-p-16 {
+  padding: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-p-20 {
+  padding: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-p-24 {
+  padding: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-p-32 {
+  padding: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-pt-0 {
+  padding-top: 0;
+}
+.dt-u-pt-auto {
+  padding-top: auto;
+}
+.dt-u-pt-2 {
+  padding-top: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-pt-4 {
+  padding-top: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-pt-8 {
+  padding-top: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-pt-16 {
+  padding-top: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-pt-20 {
+  padding-top: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-pt-24 {
+  padding-top: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-pt-32 {
+  padding-top: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-pr-0 {
+  padding-right: 0;
+}
+.dt-u-pr-auto {
+  padding-right: auto;
+}
+.dt-u-pr-2 {
+  padding-right: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-pr-4 {
+  padding-right: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-pr-8 {
+  padding-right: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-pr-16 {
+  padding-right: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-pr-20 {
+  padding-right: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-pr-24 {
+  padding-right: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-pr-32 {
+  padding-right: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-pb-0 {
+  padding-bottom: 0;
+}
+.dt-u-pb-auto {
+  padding-bottom: auto;
+}
+.dt-u-pt-2 {
+  padding-bottom: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-pt-4 {
+  padding-bottom: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-pt-8 {
+  padding-bottom: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-pt-16 {
+  padding-bottom: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-pt-20 {
+  padding-bottom: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-pt-24 {
+  padding-bottom: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-pt-32 {
+  padding-bottom: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-pl-0 {
+  padding-left: 0;
+}
+.dt-u-pl-auto {
+  padding-left: auto;
+}
+.dt-u-pl-2 {
+  padding-left: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-pl-4 {
+  padding-left: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-pl-8 {
+  padding-left: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-pl-16 {
+  padding-left: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-pl-20 {
+  padding-left: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-pl-24 {
+  padding-left: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-pl-32 {
+  padding-left: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-ph-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.dt-u-ph-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.dt-u-pv-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dt-u-pv-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+/* --------------- MARGIN --------------- */
+
+.dt-u-m-0 {
+  margin: 0;
+}
+.dt-u-m-auto {
+  margin: auto;
+}
+.dt-u-m-2 {
+  margin: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-m-4 {
+  margin: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-m-8 {
+  margin: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-m-16 {
+  margin: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-m-20 {
+  margin: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-m-24 {
+  margin: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-m-32 {
+  margin: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-mt-0 {
+  margin-top: 0;
+}
+.dt-u-mt-auto {
+  margin-top: auto;
+}
+.dt-u-mt-2 {
+  margin-top: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-mt-4 {
+  margin-top: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-mt-8 {
+  margin-top: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-mt-16 {
+  margin-top: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-mt-20 {
+  margin-top: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-mt-24 {
+  margin-top: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-mt-32 {
+  margin-top: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-mr-0 {
+  margin-right: 0;
+}
+.dt-u-mr-auto {
+  margin-right: auto;
+}
+.dt-u-mr-2 {
+  margin-right: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-mr-4 {
+  margin-right: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-mr-8 {
+  margin-right: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-mr-16 {
+  margin-right: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-mr-20 {
+  margin-right: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-mr-24 {
+  margin-right: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-mr-32 {
+  margin-right: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-mb-0 {
+  margin-bottom: 0;
+}
+.dt-u-mb-auto {
+  margin-bottom: auto;
+}
+.dt-u-mt-2 {
+  margin-bottom: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-mt-4 {
+  margin-bottom: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-mt-8 {
+  margin-bottom: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-mt-16 {
+  margin-bottom: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-mt-20 {
+  margin-bottom: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-mt-24 {
+  margin-bottom: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-mt-32 {
+  margin-bottom: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-ml-0 {
+  margin-left: 0;
+}
+.dt-u-ml-auto {
+  margin-left: auto;
+}
+.dt-u-ml-2 {
+  margin-left: var(--telekom-spacing-composition-space-02);
+}
+.dt-u-ml-4 {
+  margin-left: var(--telekom-spacing-composition-space-03);
+}
+.dt-u-ml-8 {
+  margin-left: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-ml-16 {
+  margin-left: var(--telekom-spacing-composition-space-06);
+}
+.dt-u-ml-20 {
+  margin-left: var(--telekom-spacing-composition-space-07);
+}
+.dt-u-ml-24 {
+  margin-left: var(--telekom-spacing-composition-space-08);
+}
+.dt-u-ml-32 {
+  margin-left: var(--telekom-spacing-composition-space-10);
+}
+
+.dt-u-mh-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.dt-u-mh-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dt-u-mv-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.dt-u-mv-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}

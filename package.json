@@ -1,9 +1,19 @@
 {
   "name": "css-package-prototype",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a CSS package which contains a set of CSS files",
-  "main": "index.css",
+  "main": "dist/main.min.css",
   "repository": "https://github.com/maomaoZH/css-package.git",
   "author": "Maomao Meyer-Zhang",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build:css": "cleancss -o dist/main.min.css src/index.css",
+    "build": "npm run build:css"
+  },
+  "dependencies": {
+    "@telekom/design-tokens": "^1.0.0-beta.8"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2"
+  }
 }
