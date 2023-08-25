@@ -35,6 +35,9 @@
 .dt-u-p-8 {
   padding: var(--telekom-spacing-composition-space-04);
 }
+.dt-u-p-12 {
+  padding: var(--telekom-spacing-composition-space-05);
+}
 .dt-u-p-16 {
   padding: var(--telekom-spacing-composition-space-06);
 }
@@ -62,6 +65,9 @@
 }
 .dt-u-pt-8 {
   padding-top: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-pt-12 {
+  padding-top: var(--telekom-spacing-composition-space-05);
 }
 .dt-u-pt-16 {
   padding-top: var(--telekom-spacing-composition-space-06);
@@ -91,6 +97,9 @@
 .dt-u-pr-8 {
   padding-right: var(--telekom-spacing-composition-space-04);
 }
+.dt-u-pr-12 {
+  padding-right: var(--telekom-spacing-composition-space-05);
+}
 .dt-u-pr-16 {
   padding-right: var(--telekom-spacing-composition-space-06);
 }
@@ -110,25 +119,28 @@
 .dt-u-pb-auto {
   padding-bottom: auto;
 }
-.dt-u-pt-2 {
+.dt-u-pb-2 {
   padding-bottom: var(--telekom-spacing-composition-space-02);
 }
-.dt-u-pt-4 {
+.dt-u-pb-4 {
   padding-bottom: var(--telekom-spacing-composition-space-03);
 }
-.dt-u-pt-8 {
+.dt-u-pb-8 {
   padding-bottom: var(--telekom-spacing-composition-space-04);
 }
-.dt-u-pt-16 {
+.dt-u-pb-12 {
+  padding-bottom: var(--telekom-spacing-composition-space-05);
+}
+.dt-u-pb-16 {
   padding-bottom: var(--telekom-spacing-composition-space-06);
 }
-.dt-u-pt-20 {
+.dt-u-pb-20 {
   padding-bottom: var(--telekom-spacing-composition-space-07);
 }
-.dt-u-pt-24 {
+.dt-u-pb-24 {
   padding-bottom: var(--telekom-spacing-composition-space-08);
 }
-.dt-u-pt-32 {
+.dt-u-pb-32 {
   padding-bottom: var(--telekom-spacing-composition-space-10);
 }
 
@@ -146,6 +158,9 @@
 }
 .dt-u-pl-8 {
   padding-left: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-pl-12 {
+  padding-left: var(--telekom-spacing-composition-space-05);
 }
 .dt-u-pl-16 {
   padding-left: var(--telekom-spacing-composition-space-06);
@@ -195,6 +210,9 @@
 .dt-u-m-8 {
   margin: var(--telekom-spacing-composition-space-04);
 }
+.dt-u-m-12 {
+  margin: var(--telekom-spacing-composition-space-05);
+}
 .dt-u-m-16 {
   margin: var(--telekom-spacing-composition-space-06);
 }
@@ -222,6 +240,9 @@
 }
 .dt-u-mt-8 {
   margin-top: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-mt-12 {
+  margin-top: var(--telekom-spacing-composition-space-05);
 }
 .dt-u-mt-16 {
   margin-top: var(--telekom-spacing-composition-space-06);
@@ -251,6 +272,9 @@
 .dt-u-mr-8 {
   margin-right: var(--telekom-spacing-composition-space-04);
 }
+.dt-u-mr-12 {
+  margin-right: var(--telekom-spacing-composition-space-05);
+}
 .dt-u-mr-16 {
   margin-right: var(--telekom-spacing-composition-space-06);
 }
@@ -279,6 +303,9 @@
 .dt-u-mt-8 {
   margin-bottom: var(--telekom-spacing-composition-space-04);
 }
+.dt-u-mt-12 {
+  margin-top: var(--telekom-spacing-composition-space-05);
+}
 .dt-u-mt-16 {
   margin-bottom: var(--telekom-spacing-composition-space-06);
 }
@@ -306,6 +333,9 @@
 }
 .dt-u-ml-8 {
   margin-left: var(--telekom-spacing-composition-space-04);
+}
+.dt-u-ml-12 {
+  margin-left: var(--telekom-spacing-composition-space-05);
 }
 .dt-u-ml-16 {
   margin-left: var(--telekom-spacing-composition-space-06);

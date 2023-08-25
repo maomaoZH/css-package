@@ -6,9 +6,107 @@
     <link rel="stylesheet" href="../src/index.css" />
   </head>
   <body style="font-family: TeleNeoWeb, sans-serif">
-    å
-    <h2>Accordion</h2>
+    <h2>Breadcrumb</h2>
+    <nav aria-label="Breadcrumb" class="dt-breadcrumb" part="base">
+      <ol class="dt-breadcrumb__list" part="list">
+        <li class="dt-breadcrumb__list-item" part="list-item">
+          <a href="#" class="dt-breadcrumb__link">Home</a
+          ><span class="dt-breadcrumb__separator"
+            ><svg
+              class="scale-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+            >
+              <g fill="currentColor">
+                <g>
+                  <path
+                    d="M8.982 5.911a.75.75 0 10-.93 1.178L14.273 12l-6.221 4.911a.75.75 0 10.931 1.177L16.694 12 8.982 5.911z"
+                    fill-rule="evenodd"
+                  ></path>
+                </g>
+              </g></svg
+          ></span>
+        </li>
+        <li class="dt-breadcrumb__list-item" part="list-item">
+          <a href="#" class="dt-breadcrumb__link">Page 1</a
+          ><span class="dt-breadcrumb__separator">
+            <svg
+              class="scale-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+            >
+              <g fill="currentColor">
+                <g>
+                  <path
+                    d="M8.982 5.911a.75.75 0 10-.93 1.178L14.273 12l-6.221 4.911a.75.75 0 10.931 1.177L16.694 12 8.982 5.911z"
+                    fill-rule="evenodd"
+                  ></path>
+                </g>
+              </g></svg
+          ></span>
+        </li>
+        <li class="dt-breadcrumb__list-item" part="list-item">
+          <a href="#" class="dt-breadcrumb__link">Page 2</a
+          ><span class="dt-breadcrumb__separator"
+            ><svg
+              class="scale-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+            >
+              <g fill="currentColor">
+                <g>
+                  <path
+                    d="M8.982 5.911a.75.75 0 10-.93 1.178L14.273 12l-6.221 4.911a.75.75 0 10.931 1.177L16.694 12 8.982 5.911z"
+                    fill-rule="evenodd"
+                  ></path>
+                </g>
+              </g></svg
+          ></span>
+        </li>
+        <li class="dt-breadcrumb__list-item" part="list-item">
+          <a
+            href="#"
+            class="dt-breadcrumb__current dt-breadcrumb__link"
+            aria-current="page"
+            >Current Page</a
+          >
+        </li>
+      </ol>
+    </nav>
+    <br />
 
+    <h2>Switch</h2>
+    <div class="dt-switch">
+      <label class="dt-switch__wrapper">
+        <input class="dt-switch__control" type="checkbox" />
+        <div class="dt-switch__toggle" aria-hidden="true">
+          <div class="dt-switch__thumb"></div>
+          <div class="dt-switch__io-text">0</div>
+        </div>
+        <div class="dt-switch__toggle--overlay" aria-hidden="true"></div>
+        <span class="dt-switch__label-text dt-u-ml-8">Einstellung</span>
+      </label>
+    </div>
+    <div class="dt-u-mt-24">
+      <div class="dt-switch dt-switch--disabled">
+        <label class="dt-switch__wrapper">
+          <span class="dt-switch__label-text dt-u-mr-8">Einstellung</span>
+          <input class="dt-switch__control" disabled type="checkbox" />
+          <div class="dt-switch__toggle" aria-hidden="true">
+            <div class="dt-switch__thumb"></div>
+            <div class="dt-switch__io-text"></div>
+          </div>
+          <div class="dt-switch__toggle--overlay" aria-hidden="true"></div>
+        </label>
+      </div>
+    </div>
+    <h2>Accordion</h2>
     <div class="dt-accordion">
       <div class="dt-accordion__content">
         <button
@@ -235,6 +333,23 @@
             this.getAttribute("aria-controls")
           );
           content.hidden = expanded;
+        });
+      });
+
+      // Get all checkboxes
+      var checkboxes = document.querySelectorAll(".dt-switch__control");
+
+      checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function () {
+          if (this.checked) {
+            // Add 'checked' class to parent div
+            this.parentNode.classList.add("dt-switch--checked");
+            this.nextElementSibling.children[1].innerText = "I";
+          } else {
+            // Remove 'checked' class from parent div
+            this.parentNode.classList.remove("dt-switch--checked");
+            this.nextElementSibling.children[1].innerText = "0";
+          }
         });
       });
     </script>

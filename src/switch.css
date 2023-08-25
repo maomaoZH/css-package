@@ -1,0 +1,175 @@
+:root {
+  --_switch-width: 42px;
+  --_switch-height: 24px;
+  --_switch-offset: 2px;
+  --_switch-radius: 1em;
+  --_switch-transition-duration: var(--telekom-motion-duration-immediate);
+  --_switch-transition-easing: var(--telekom-motion-easing-standard);
+  --_switch-shadow-thumb: 0 0 2px 0 rgba(0, 0, 0, 0.24),
+    0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 4px 12px 0 rgba(0, 0, 0, 0.26);
+  --_switch-font-label: var(--telekom-text-style-ui);
+  --_switch-font-io-text: var(--telekom-text-style-small-bold);
+  --_switch-color-label: var(--telekom-color-text-and-icon-standard);
+}
+
+.dt-switch {
+  --_background: var(--telekom-color-ui-faint);
+  --_color-thumb: var(--telekom-color-ui-white, #fff);
+  --_overlay-background: transparent;
+
+  display: inline-block;
+  position: relative;
+}
+
+/* <label> */
+.dt-switch__wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* <input> */
+.dt-switch__control {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: var(--_switch-width);
+  height: var(--_switch-height);
+  opacity: 0;
+}
+
+.dt-switch__toggle {
+  position: relative;
+  width: var(--_switch-width);
+  height: var(--_switch-height);
+  background: var(--_background);
+  border-radius: var(--_switch-radius);
+  transition-property: background;
+  transition-duration: var(--_switch-transition-duration);
+  transition-timing-function: var(--_switch-transition-easing);
+}
+
+.dt-switch__toggle--overlay {
+  position: absolute;
+  width: var(--_switch-width);
+  height: var(--_switch-height);
+  border-radius: var(--_switch-radius);
+  background: var(--_overlay-background);
+}
+
+.dt-switch:hover {
+  --_overlay-background: var(--telekom-color-ui-state-fill-hovered);
+}
+
+.dt-switch:active {
+  --_overlay-background: var(--telekom-color-ui-state-fill-pressed);
+}
+
+.dt-switch--checked {
+  --_background: var(--telekom-color-primary-standard);
+}
+
+.dt-switch--disabled,
+.dt-switch--disabled:hover,
+.dt-switch--disabled:active {
+  --_background: var(--telekom-color-ui-disabled);
+  --_color-thumb: var(--telekom-color-ui-faint);
+  --_overlay-background: transparent;
+}
+
+.dt-switch--checked .dt-switch--disabled,
+.dt-switch--checked .dt-switch--disabled:hover,
+.dt-switch--checked .dt-switch--disabled:active {
+  --_background: var(--telekom-color-ui-faint);
+  --_color-thumb: var(--telekom-color-ui-disabled);
+  box-shadow: var(--telekom-shadow-raised-standard);
+  --_overlay-background: transparent;
+}
+
+.dt-switch--disabled .dt-switch__wrapper {
+  cursor: not-allowed;
+}
+.dt-switch--disabled .dt-switch__thumb {
+  box-shadow: var(--telekom-shadow-raised-standard);
+}
+
+.dt-switch--size-large {
+  --_switch-width: 56px;
+  --_switch-height: 32px;
+}
+
+/*
+  I think there's a selector combination that could
+  replace .dt-switch--focus-visible-not-supported and the JS check
+*/
+
+/* I don't like the ~ */
+.dt-switch--focus-visible-not-supported :focus ~ .dt-switch__toggle,
+:focus-visible ~ .dt-switch__toggle {
+  outline: var(--telekom-spacing-composition-space-02) solid
+    var(--telekom-color-functional-focus-standard);
+  outline-offset: var(--telekom-spacing-composition-space-01);
+}
+
+.dt-switch__thumb {
+  --_size: calc(var(--_switch-height) - var(--_switch-offset) * 2);
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  width: var(--_size);
+  height: var(--_size);
+  aspect-ratio: 1 / 1;
+  background: var(--_color-thumb);
+  border-radius: 50%;
+  box-shadow: var(--_switch-shadow-thumb);
+  margin: var(--_switch-offset);
+  transition-property: margin, width, height, background, color;
+  transition-duration: var(--_switch-transition-duration);
+  transition-timing-function: var(--_switch-transition-easing);
+  color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.dt-switch--checked .dt-switch__thumb {
+  margin-left: 1em;
+  margin-inline-start: calc(
+    var(--_switch-width) - var(--_switch-height) + var(--_switch-offset)
+  );
+}
+
+.dt-switch__io-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: auto;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: var(--_switch-height);
+  margin-left: calc(50% - var(--offset));
+  font: var(--_switch-font-io-text);
+  line-height: var(--telekom-typography-line-spacing-none);
+}
+
+.dt-switch--size-large .dt-switch__io-text {
+  margin-top: 1px;
+  font: var(--telekom-text-style-caption-bold);
+}
+
+.dt-switch--checked .dt-switch__io-text {
+  margin-left: var(--offset);
+  color: var(--telekom-color-text-and-icon-white-standard);
+  left: 0;
+  right: auto;
+}
+
+.dt-switch--disabled .dt-switch__io-text {
+  color: var(--telekom-color-text-and-icon-disabled);
+}
+
+.dt-switch__label-text {
+  font: var(--_switch-font-label);
+  color: var(--_switch-color-label);
+}

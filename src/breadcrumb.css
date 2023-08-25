@@ -1,0 +1,79 @@
+:root {
+  --_breadcrumb-spacing-left: calc(
+    -1 * var(--telekom-spacing-composition-space-04)
+  );
+
+  --_breadcrumb-font-size-list-item: var(
+    --telekom-typography-font-size-caption
+  );
+
+  --_breadcrumb-color-separator: var(--telekom-color-text-and-icon-additional);
+
+  --_breadcrumb-spacing-y-item: var(--telekom-spacing-composition-space-03);
+  --_breadcrumb-spacing-x-item: var(--telekom-spacing-composition-space-04);
+
+  --_breadcrumb-color-link: var(--telekom-color-text-and-icon-additional);
+  --_breadcrumb-radius-link: var(--telekom-radius-standard);
+  --_breadcrumb-color-link-hover: var(
+    --telekom-color-text-and-icon-primary-hovered
+  );
+  --_breadcrumb-color-link-active: var(
+    --telekom-color-text-and-icon-primary-pressed
+  );
+
+  --_breadcrumb-focus-outline: var(--telekom-line-weight-highlight) solid
+    var(--telekom-color-functional-focus-standard);
+  --_breadcrumb-font-current: var(--telekom-text-style-caption-bold);
+  --_breadcrumb-color-current: var(--telekom-color-text-and-icon-standard);
+}
+
+.dt-breadcrumb {
+  margin-left: var(--_breadcrumb-spacing-left);
+}
+
+.dt-breadcrumb__list {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.dt-breadcrumb__list-item {
+  display: inline-flex;
+  font-size: var(--_breadcrumb-font-size-list-item);
+  align-items: center;
+}
+
+.dt-breadcrumb__separator {
+  display: flex;
+  color: var(--_breadcrumb-color-separator);
+}
+
+.dt-breadcrumb__item,
+.dt-breadcrumb__link {
+  padding: var(--_breadcrumb-spacing-y-item) var(--_breadcrumb-spacing-x-item);
+}
+
+.dt-breadcrumb__link {
+  text-decoration: none;
+  color: var(--_breadcrumb-color-link);
+  border-radius: var(--_breadcrumb-radius-link);
+}
+
+.dt-breadcrumb__link:hover {
+  color: var(--_breadcrumb-color-link-hover);
+}
+
+.dt-breadcrumb__link:active {
+  color: var(--_breadcrumb-color-link-active);
+}
+
+.dt-breadcrumb__link:focus {
+  outline: var(--_breadcrumb-focus-outline);
+}
+
+.dt-breadcrumb__current {
+  font: var(--_breadcrumb-font-current);
+  color: var(--_breadcrumb-color-current);
+}
