@@ -5,35 +5,235 @@
     <title>css prototype index file</title>
     <link rel="stylesheet" href="../src/index.css" />
   </head>
-  <body style="font-family: TeleNeoWeb, sans-serif">
+  <body
+    style="
+      font-family: TeleNeoWeb, sans-serif;
+      background: var(--telekom-color-background-surface);
+      color: var(--telekom-color-text-and-icon-standard);
+    "
+    ;
+  >
+    <h2>checkbox</h2>
+    <div class="dt-checkbox" aria-checked="false">
+      <input
+        type="checkbox"
+        part="input"
+        id="input-checkbox-160"
+        value=""
+      /><label part="container" for="input-checkbox-160"
+        ><div part="checkbox">
+          <svg
+            class="dt-icon-checkmark"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            display="none"
+          >
+            <g fill="currentColor">
+              <g>
+                <path
+                  d="M21.756 5.48a.75.75 0 00-1.061 0L9.219 16.956l-5.463-5.463a.749.749 0 10-1.06 1.06l6.523 6.523L21.756 6.54a.75.75 0 000-1.06"
+                  fill-rule="evenodd"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div part="label">Checkbox</div></label
+      >
+    </div>
+    <div
+      class="dt-checkbox dt-checkbox--checked dt-checkbox--disabled dt-u-mt-12"
+      aria-checked="true"
+    >
+      <input type="checkbox" part="input" id="input-checkbox-16" value="" />
+      <label part="container" for="input-checkbox-16">
+        <div part="checkbox">
+          <svg
+            class="dt-icon-checkmark"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            display="block"
+          >
+            <g fill="currentColor">
+              <g>
+                <path
+                  d="M21.756 5.48a.75.75 0 00-1.061 0L9.219 16.956l-5.463-5.463a.749.749 0 10-1.06 1.06l6.523 6.523L21.756 6.54a.75.75 0 000-1.06"
+                  fill-rule="evenodd"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div part="label">Checkbox disabled</div>
+      </label>
+    </div>
+    <div
+      label="Standard with error"
+      invalid="true"
+      class="dt-checkbox dt-checkbox--has-error dt-u-mt-12"
+    >
+      <input
+        type="checkbox"
+        part="input"
+        id="input-checkbox-174"
+        value=""
+        aria-invalid=""
+        aria-describedby="helper-message-174"
+      />
+      <label part="container" for="input-checkbox-174">
+        <div part="checkbox">
+          <svg
+            class="dt-icon-checkmark"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            display="none"
+          >
+            <g fill="currentColor">
+              <g>
+                <path
+                  d="M21.756 5.48a.75.75 0 00-1.061 0L9.219 16.956l-5.463-5.463a.749.749 0 10-1.06 1.06l6.523 6.523L21.756 6.54a.75.75 0 000-1.06"
+                  fill-rule="evenodd"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div part="label">Standard with error</div>
+      </label>
+      <div
+        part="helper-text"
+        id="helper-message-174"
+        aria-live="polite"
+        aria-relevant="additions removals"
+      >
+        <svg
+          class="dt-icon-alert-error"
+          xmlns="http://www.w3.org/2000/svg"
+          width="11"
+          height="11"
+          viewBox="0 0 24 24"
+        >
+          <g fill="currentColor">
+            <g>
+              <path
+                d="M11.95 1.8c.938 0 1.875.44 2.483 1.318l.117.182 8.5 14.7c1.17 1.951-.18 4.378-2.383 4.496l-.167.004H3.55c-2.243 0-3.677-2.377-2.681-4.35L.95 18l8.4-14.7c.6-1 1.6-1.5 2.6-1.5zm.105 1.5h-.11a1.431 1.431 0 00-1.155.61l-.09.14-8.5 14.7c-.343.6-.208 1.09-.068 1.375l.068.125.077.12c.167.24.48.57 1.058.623L3.5 21h17c.75 0 1.15-.5 1.25-.75l.068-.125a1.47 1.47 0 00.048-1.227l-.066-.148-8.5-14.7c-.32-.56-.8-.704-1.107-.74l-.138-.01zM12 16.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zm1-8V15h-2V8.5h2z"
+                fill-rule="evenodd"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        This is the error message
+      </div>
+    </div>
+
+    <h2>Chip</h2>
+    <div
+      role="switch"
+      tabindex="0"
+      class="dt-chip dt-chip--type-persistent dt-chip--variant-standard dt-chip--selected"
+      aria-checked="false"
+    >
+      <span class="dt-chip-label">chip standard</span
+      ><svg
+        class="dt-checkmark-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        style="display: none"
+      >
+        >
+        <title>success</title>
+        <g fill="currentColor">
+          <g>
+            <path
+              d="M9.215 19.78l-6.898-6.866a1.25 1.25 0 111.764-1.771l5.13 5.106L20.3 5.159a1.25 1.25 0 011.768 1.767L9.215 19.78z"
+              fill-rule="evenodd"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      role="switch"
+      tabindex="0"
+      class="dt-chip dt-chip--type-persistent dt-chip--variant-outline"
+      aria-checked="false"
+    >
+      <span class="dt-chip-label">chip outline</span
+      ><svg
+        class="dt-checkmark-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        style="display: none"
+      >
+        >
+        <title>success</title>
+        <g fill="currentColor">
+          <g>
+            <path
+              d="M9.215 19.78l-6.898-6.866a1.25 1.25 0 111.764-1.771l5.13 5.106L20.3 5.159a1.25 1.25 0 011.768 1.767L9.215 19.78z"
+              fill-rule="evenodd"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      role="switch"
+      tabindex="0"
+      class="dt-chip dt-chip--type-persistent dt-chip--variant-standard dt-chip--disabled"
+      aria-checked="false"
+    >
+      <span class="dt-chip-label"> Disabled</span>
+    </div>
+    <div
+      role="switch"
+      tabindex="0"
+      class="dt-chip dt-chip--type-persistent dt-chip--variant-standard dt-chip--selected dt-chip--disabled"
+      aria-checked="true"
+    >
+      <span class="dt-chip-label"> Selected Disabled</span
+      ><svg
+        class="dt-checkmark-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        style="display: block"
+      >
+        >
+        <title>success</title>
+        <g fill="currentColor">
+          <g>
+            <path
+              d="M9.215 19.78l-6.898-6.866a1.25 1.25 0 111.764-1.771l5.13 5.106L20.3 5.159a1.25 1.25 0 011.768 1.767L9.215 19.78z"
+              fill-rule="evenodd"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+
     <h2>Breadcrumb</h2>
-    <nav aria-label="Breadcrumb" class="dt-breadcrumb" part="base">
-      <ol class="dt-breadcrumb__list" part="list">
-        <li class="dt-breadcrumb__list-item" part="list-item">
-          <a href="#" class="dt-breadcrumb__link">Home</a
-          ><span class="dt-breadcrumb__separator"
-            ><svg
-              class="scale-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-            >
-              <g fill="currentColor">
-                <g>
-                  <path
-                    d="M8.982 5.911a.75.75 0 10-.93 1.178L14.273 12l-6.221 4.911a.75.75 0 10.931 1.177L16.694 12 8.982 5.911z"
-                    fill-rule="evenodd"
-                  ></path>
-                </g>
-              </g></svg
-          ></span>
-        </li>
-        <li class="dt-breadcrumb__list-item" part="list-item">
-          <a href="#" class="dt-breadcrumb__link">Page 1</a
-          ><span class="dt-breadcrumb__separator">
+    <nav aria-label="Breadcrumb" class="dt-breadcrumb">
+      <ol class="dt-breadcrumb__list">
+        <li class="dt-breadcrumb__list-item">
+          <a href="#1" class="dt-breadcrumb__link">Home</a>
+          <span class="dt-breadcrumb__separator">
             <svg
-              class="scale-icon"
+              class="dt-icon-navigation-right"
               xmlns="http://www.w3.org/2000/svg"
               width="12"
               height="12"
@@ -46,14 +246,15 @@
                     fill-rule="evenodd"
                   ></path>
                 </g>
-              </g></svg
-          ></span>
+              </g>
+            </svg>
+          </span>
         </li>
-        <li class="dt-breadcrumb__list-item" part="list-item">
-          <a href="#" class="dt-breadcrumb__link">Page 2</a
-          ><span class="dt-breadcrumb__separator"
-            ><svg
-              class="scale-icon"
+        <li class="dt-breadcrumb__list-item">
+          <a href="#2" class="dt-breadcrumb__link">Page 1</a>
+          <span class="dt-breadcrumb__separator">
+            <svg
+              class="dt-icon-navigation-right"
               xmlns="http://www.w3.org/2000/svg"
               width="12"
               height="12"
@@ -66,12 +267,34 @@
                     fill-rule="evenodd"
                   ></path>
                 </g>
-              </g></svg
-          ></span>
+              </g>
+            </svg>
+          </span>
         </li>
-        <li class="dt-breadcrumb__list-item" part="list-item">
+        <li class="dt-breadcrumb__list-item">
+          <a href="#2" class="dt-breadcrumb__link">Page 2</a>
+          <span class="dt-breadcrumb__separator">
+            <svg
+              class="dt-icon-navigation-right"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+            >
+              <g fill="currentColor">
+                <g>
+                  <path
+                    d="M8.982 5.911a.75.75 0 10-.93 1.178L14.273 12l-6.221 4.911a.75.75 0 10.931 1.177L16.694 12 8.982 5.911z"
+                    fill-rule="evenodd"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </li>
+        <li class="dt-breadcrumb__list-item">
           <a
-            href="#"
+            href="#3"
             class="dt-breadcrumb__current dt-breadcrumb__link"
             aria-current="page"
             >Current Page</a
@@ -79,7 +302,6 @@
         </li>
       </ol>
     </nav>
-    <br />
 
     <h2>Switch</h2>
     <div class="dt-switch">
@@ -225,7 +447,7 @@
       </div>
     </div>
 
-    <h2>button</h2>
+    <h2>Button</h2>
     <button class="dt-btn dt-btn--primary">primary</button>
     <button class="dt-btn dt-btn--secondary">secondary</button>
     <button class="dt-btn dt-btn--primary dt-btn--small">primary small</button>
@@ -296,7 +518,7 @@
       </svg>
     </button>
 
-    <h2>card</h2>
+    <h2>Card</h2>
     <div
       class="dt-card dt-card--has-image-horizontal dt-card--interactive"
       style="width: 600px; height: 200px; margin-bottom: 64px"
@@ -324,7 +546,11 @@
     </div>
 
     <script>
-      document.querySelectorAll(".dt-accordion button").forEach((button) => {
+      // get all accordion buttons
+      const accordionButtons = document.querySelectorAll(
+        ".dt-accordion button"
+      );
+      accordionButtons.forEach((button) => {
         button.addEventListener("click", function () {
           const expanded =
             this.getAttribute("aria-expanded") === "true" || false;
@@ -336,10 +562,9 @@
         });
       });
 
-      // Get all checkboxes
-      var checkboxes = document.querySelectorAll(".dt-switch__control");
-
-      checkboxes.forEach(function (checkbox) {
+      // Get all switch buttons
+      const switchButtons = document.querySelectorAll(".dt-switch__control");
+      switchButtons.forEach(function (checkbox) {
         checkbox.addEventListener("change", function () {
           if (this.checked) {
             // Add 'checked' class to parent div
@@ -349,6 +574,50 @@
             // Remove 'checked' class from parent div
             this.parentNode.classList.remove("dt-switch--checked");
             this.nextElementSibling.children[1].innerText = "0";
+          }
+        });
+      });
+
+      // get all chip buttons
+      const chipButtons = document.querySelectorAll(
+        ".dt-chip:not(.dt-chip--disabled)"
+      );
+      chipButtons.forEach(function (chip) {
+        chip.addEventListener("click", function () {
+          let checkMarkSvg = this.querySelector(".dt-checkmark-icon");
+          let isChecked = this.getAttribute("aria-checked") === "true";
+          // Toggle the checkMarkSvg visibility
+          if (isChecked) {
+            checkMarkSvg.style.display = "none";
+            this.setAttribute("aria-checked", "false");
+            this.classList.remove("dt-chip--selected");
+          } else {
+            checkMarkSvg.style.display = "block";
+            this.setAttribute("aria-checked", "true");
+            this.classList.add("dt-chip--selected");
+          }
+        });
+      });
+
+      // get all checkbox inputs
+      const checkboxes = document.querySelectorAll(
+        ".dt-checkbox:not(.dt-checkbox--disabled) input[type='checkbox']"
+      );
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          const parentDiv = this.closest(".dt-checkbox");
+          const checkmarkIcon = parentDiv.querySelector(".dt-icon-checkmark");
+
+          // Update class and aria-checked attribute based on checkbox status
+          if (this.checked) {
+            parentDiv.classList.add("dt-checkbox--checked");
+            parentDiv.setAttribute("aria-checked", "true");
+            checkmarkIcon.style.display = "block";
+          } else {
+            parentDiv.classList.remove("dt-checkbox--checked");
+            parentDiv.setAttribute("aria-checked", "false");
+            checkmarkIcon.style.display = "none";
           }
         });
       });
